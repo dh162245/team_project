@@ -96,4 +96,51 @@ nav{
     background-size: cover;
     height: 100vh;
 }
+.center{
+    width:80%;
+    margin:0 auto;
+}
 
+.center h1{
+    font-family: "trajan";
+    font-size:100px;
+    color:#fff;
+    text-shadow: 5px 5px 2px #000;
+    padding-top: 130px;
+}
+
+.center input,
+.center textarea{
+    font-family: "gotham";
+    margin-top:35px;
+    display:block; 
+    border-radius:10px;
+    background: rgba(196, 196, 196, 0.5);        
+    font-size:40px;
+    padding-left:24px;
+    border:none;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+::placeholder{
+    color:white;
+}
+.center input[type="email"]{
+    height:70px;
+    width:590px;
+}
+
+.center textarea{
+    padding-top:18px;
+    height:300px;
+    width:100%;
+}
+
+.center input[type="submit"]{
+    height:60px;
+    width:250px;
+    background: #F4A939;
+    padding:0;
+    color:white;
+    margin-bottom:160px;
+}
