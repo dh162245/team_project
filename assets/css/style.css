@@ -5,6 +5,15 @@ body::-webkit-scrollbar{
      scrollbar-width: none;  /* Firefox */
 }
 
+@font-face {
+    font-family: "gotham";
+    src: url(../fonts/Gotham-Narrow-Font-Family/GothamNarrow-Light.otf);
+}
+
+@font-face {
+    font-family: "trajan";
+    src: url(../fonts/TrajanProRegular/TrajanProRegular.ttf);
+}
 
 *{
     margin: 0;
@@ -13,6 +22,54 @@ body::-webkit-scrollbar{
 
 nav{
     position: fixed;
+}
+
+.right{
+    width: 40%;
+    padding: 10% 0% 0% 55%;
+}
+
+.right h1{
+    font-family: Trajan;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 5px 5px 2px #000;
+}
+
+.right h2{
+    font-family: Gotham;
+    font-size: 60px;
+    color: #fff;
+}
+
+.right p{
+    font-family: Gotham;
+    font-size: 30px;
+    color: #fff;
+    }
+
+.left{
+    width: 40%;
+    padding: 10% 0% 0% 10%;
+}
+    
+.left h1{
+    font-family: Trajan;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 5px 5px 2px #000;
+}
+    
+.left h2{
+    font-family: Gotham;
+    font-size: 60px;
+    color: #fff;
+}
+    
+.left p{
+    font-family: Gotham;
+    font-size: 30px;
+    color: #fff;
 }
 
 
