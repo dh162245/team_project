@@ -36,12 +36,6 @@ body::-webkit-scrollbar{
     padding: 0;
 }
 
-nav{
-    position: fixed;
-}
-
-
-
 
 #first{
     background-image: url('../img/img1_2.jpg');
@@ -51,6 +45,8 @@ nav{
     background-size: cover;
     height: 100vh;
 }
+
+
 
 #nightKing{
     background-image: url('../img/img2.png');
@@ -97,3 +93,45 @@ nav{
     height: 100vh;
 }
 
+
+
+.first_ul, .second_ul{
+    padding-top: 100px;
+    list-style: none;
+}
+
+
+.first_ul{
+    padding-top: 7rem;
+}
+
+.second_ul{
+    margin-top: 40rem;
+}
+
+
+.first_ul li, .second_ul li{
+    display: inline-block;
+}
+
+.first_ul li:nth-of-type(1){
+    margin-left: 3rem;
+    margin-right: 65%;
+}
+
+.second_ul li:nth-of-type(1){
+    margin-left: 4rem;
+    margin-right: 70%;
+}
+
+
+.first_ul li a, .second_ul li a{
+    font-family: "trajan";
+    color: #F4A939;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.first_ul li a:hover, .second_ul li a:hover{
+    background-color: #000;
+}
