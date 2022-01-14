@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "gotham";
-    src: url("../fonts/Gotham-Narrow-Font-Family/GothamNarrow-Light.otf"); /* IE */
+    font-family: "Gotham";
+    src: url("../fonts/Gotham-Narrow-Font-Family/GothamNarrow-Light.otf"), url("../fonts/Gotham-Narrow-Font-Family/GothamNarrow-Thin.otf"), url("../fonts/Gotham-Narrow-Font-Family/GothamNarrow-XLight.otf"); /* IE */
     src: url('../fonts/Gotham-Narrow-Font-Family/GothamNarrow-Light.otf') format('truetype'); /* others */
   }
  
@@ -10,9 +10,20 @@
     src: url('../fonts/TrajanProRegular/TrajanProRegular.ttf') format('truetype'); /* others */
   }
 
+  @font-face {
+    font-family: "gothamBook";
+    src: url("../fonts/Gotham-Narrow-Font-Family/GothamXNarrow-Book.otf"); /* IE */
+    src: url('../fonts/Gotham-Narrow-Font-Family/GothamXNarrow-Book.otf') format('truetype'); /* others */
+  }
 
-  p{
-    font-family: "gotham";
+  
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+p{
+    font-family: "Gotham";
     font-size: 50px;
     color: #fff;
 }
@@ -30,15 +41,7 @@ body::-webkit-scrollbar{
      scrollbar-width: none;  /* Firefox */
 }
 
-@font-face {
-    font-family: "gotham";
-    src: url(../fonts/Gotham-Narrow-Font-Family/GothamNarrow-Light.otf);
-}
 
-@font-face {
-    font-family: "trajan";
-    src: url(../fonts/TrajanProRegular/TrajanProRegular.ttf);
-}
 
 *{
     margin: 0;
@@ -46,12 +49,68 @@ body::-webkit-scrollbar{
 }
 
 
-nav{
+
+header{
+    width: 100%;
     position: fixed;
 }
+nav{
+    /* position: fixed; */
+    background-color: #000;
+    width: 100%;
+    height: 9vh;
+}
+ul{
+    text-align: right;
+}
+ul li{
+    color: #5E5E5E;
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: 15px;
+}
+
+.title1{
+    color: #fff;
+    font-family: "trajan";
+    font-size: 40px;
+    padding-right: 48%;
+    text-indent: 1px;
+    margin-top: 15px;
+}
+.links{
+    text-decoration: none;
+    color: #5E5E5E;
+    font-family: "trajan";
+    font-size: 25px;
+    padding: 5px;
+}
+
+/* .links:hover{
+    opacity: 0.4;
+} */
+
+nav ul li:nth-of-type(1n+2):hover{
+    opacity: 0.4;
+}
+
+.icon{
+    width: 25px;
+    height: 25px; 
+}
+
+/* .icon:hover{
+    opacity: 0.4;
+} */
+
+span{
+    color: #F4A939;
+}
+
+
 
 .right{
-    width: 40%;
+    width: 38%;
     padding: 10% 0% 0% 55%;
 }
 
@@ -66,16 +125,18 @@ nav{
     font-family: Gotham;
     font-size: 60px;
     color: #fff;
+    margin-bottom: 20px;
 }
 
 .right p{
     font-family: Gotham;
     font-size: 30px;
     color: #fff;
+    font-weight: 100;
     }
 
 .left{
-    width: 40%;
+    width: 34%;
     padding: 10% 0% 0% 10%;
 }
     
@@ -90,6 +151,7 @@ nav{
     font-family: Gotham;
     font-size: 60px;
     color: #fff;
+    margin-bottom: 20px;
 }
     
 .left p{
@@ -171,7 +233,7 @@ nav{
 
 .center input,
 .center textarea{
-    font-family: "gotham";
+    font-family: "Gotham";
     margin-top:35px;
     display:block; 
     border-radius:10px;
@@ -204,8 +266,12 @@ nav{
     padding:0;
     color:white;
     margin-bottom:160px;
+    font-family: "Gotham";
 }
-=======
+
+.center input[type="submit"]:hover{
+    background-color: #000;
+}
 
 
 .first_ul, .second_ul{
@@ -249,3 +315,36 @@ nav{
     background-color: #000;
 }
 
+footer{
+    background-color: #000;
+    height: 9vh;
+}
+
+footer ul li{
+    padding-right: 5rem;
+}
+
+.com{
+    font-size: 40px;
+    margin-right: 100px;
+    padding-right: 41%;
+}
+
+.foot{
+    color: #fff;
+}
+
+.foot:hover{
+    opacity: 0.4;
+}
+
+.sf{
+    animation: sf 0.8s steps(2,start)infinite;
+}
+
+
+@keyframes sf{
+    to{
+      visibility: hidden;
+      }
+    }
