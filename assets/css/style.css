@@ -1,3 +1,28 @@
+@font-face {
+    font-family: "gotham";
+    src: url("../fonts/Gotham-Narrow-Font-Family/GothamNarrow-Light.otf"); /* IE */
+    src: url('../fonts/Gotham-Narrow-Font-Family/GothamNarrow-Light.otf') format('truetype'); /* others */
+  }
+ 
+  @font-face {
+    font-family: "trajan";
+    src: url("../fonts/TrajanProRegular/TrajanProRegular.ttf"); /* IE */
+    src: url('../fonts/TrajanProRegular/TrajanProRegular.ttf') format('truetype'); /* others */
+  }
+
+
+  p{
+    font-family: "gotham";
+    font-size: 50px;
+    color: #fff;
+}
+h1{
+    font-family: "trajan";
+    font-size: 100px;
+    font-weight: 400;
+    color: #fff;
+}
+
 
 body::-webkit-scrollbar{
     display: none;
