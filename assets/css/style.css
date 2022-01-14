@@ -3,14 +3,18 @@
     src: url("../fonts/Gotham-Narrow-Font-Family/GothamNarrow-Light.otf"); /* IE */
     src: url('../fonts/Gotham-Narrow-Font-Family/GothamNarrow-Light.otf') format('truetype'); /* others */
 }
-  @font-face {
+
+
+ @font-face {
     font-family: "trajan";
     src: url("../fonts/TrajanProRegular/TrajanProRegular.ttf"); /* IE */
     src: url('../fonts/TrajanProRegular/TrajanProRegular.ttf') format('truetype'); /* others */
   }
 
-
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body::-webkit-scrollbar{
     display: none;
@@ -18,19 +22,32 @@ body::-webkit-scrollbar{
      scrollbar-width: none;  /* Firefox */
 }
 
-*{
-    margin: 0;
-    padding: 0;
+p{
+    font-family: "gotham";
+    font-size: 50px;
+    color: #fff;
 }
+h1{
+    font-family: "trajan";
+    font-size: 100px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+
 header{
     width: 100%;
-    position: fixed;
 }
+
+
+
 nav{
     /* position: fixed; */
     background-color: #000;
     width: 100%;
     height: 5vh;
+    position: fixed;
 }
 ul{
    text-align: right;
@@ -40,6 +57,7 @@ ul li{
     color: #5E5E5E;
     display: inline-block;
 }
+
 
 .title1{
     color: #fff;
@@ -60,6 +78,57 @@ ul li{
 span{
     color: #F4A939;
 }
+
+.right{
+    width: 40%;
+    padding: 10% 0% 0% 55%;
+}
+
+.right h1{
+    font-family: Trajan;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 5px 5px 2px #000;
+}
+
+.right h2{
+    font-family: Gotham;
+    font-size: 60px;
+    color: #fff;
+}
+
+.right p{
+    font-family: Gotham;
+    font-size: 30px;
+    color: #fff;
+    }
+
+.left{
+    width: 40%;
+    padding: 10% 0% 0% 10%;
+}
+    
+.left h1{
+    font-family: Trajan;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 5px 5px 2px #000;
+}
+    
+.left h2{
+    font-family: Gotham;
+    font-size: 60px;
+    color: #fff;
+}
+    
+.left p{
+    font-family: Gotham;
+    font-size: 30px;
+    color: #fff;
+}
+
+
+
 
 #first{
     background-image: url('../img/img1_2.jpg');
@@ -115,6 +184,98 @@ span{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+.center{
+    width:80%;
+    margin:0 auto;
+}
+
+.center h1{
+    font-family: "trajan";
+    font-size:100px;
+    color:#fff;
+    text-shadow: 5px 5px 2px #000;
+    padding-top: 130px;
+}
+
+.center input,
+.center textarea{
+    font-family: "gotham";
+    margin-top:35px;
+    display:block; 
+    border-radius:10px;
+    background: rgba(196, 196, 196, 0.5);        
+    font-size:40px;
+    padding-left:24px;
+    border:none;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+::placeholder{
+    color:white;
+}
+.center input[type="email"]{
+    height:70px;
+    width:590px;
+}
+
+.center textarea{
+    padding-top:18px;
+    height:300px;
+    width:100%;
+}
+
+.center input[type="submit"]{
+    height:60px;
+    width:250px;
+    background: #F4A939;
+    padding:0;
+    color:white;
+    margin-bottom:160px;
+}
+=======
+
+
+.first_ul, .second_ul{
+    padding-top: 100px;
+    list-style: none;
+}
+
+
+.first_ul{
+    padding-top: 7rem;
+}
+
+.second_ul{
+    margin-top: 40rem;
+}
+
+
+.first_ul li, .second_ul li{
+    display: inline-block;
+}
+
+.first_ul li:nth-of-type(1){
+    margin-left: 3rem;
+    margin-right: 65%;
+}
+
+.second_ul li:nth-of-type(1){
+    margin-left: 4rem;
+    margin-right: 70%;
+}
+
+
+.first_ul li a, .second_ul li a{
+    font-family: "trajan";
+    color: #F4A939;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.first_ul li a:hover, .second_ul li a:hover{
+    background-color: #000;
 }
 
 
